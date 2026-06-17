@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>組織與角頭 - 南瑤宮老二媽會官方網站</title>
+  <meta name="description" content="深入暸解社團法人台灣南瑤宮老二媽會的組織行政架構與信仰圈。展示橫跨中彰投的十大角頭、組織從十二大角優化至十大角的決策邏輯，以及三年一輪「二媽年」的進香輪辦運作機制。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 導覽列 (Navbar) -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand" id="nav-brand">
+        <div class="brand-logo"><span>南瑤宮</span>老二媽會</div>
+        <div class="brand-subtitle">BENGANG PILGRIMAGE</div>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="選單切換">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link" id="nav-link-home">首頁</a></li>
+        <li><a href="history.html" class="nav-link" id="nav-link-history">歷史傳承</a></li>
+        <li><a href="organization.html" class="nav-link active" id="nav-link-org">組織與角頭</a></li>
+        <li><a href="culture.html" class="nav-link" id="nav-link-culture">文化與俗諺</a></li>
+        <li><a href="digital.html" class="nav-link" id="nav-link-digital">智慧轉型</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 標題橫幅 -->
+  <header class="section-padding" style="background: linear-gradient(to bottom, rgba(168, 32, 37, 0.1) 0%, transparent 100%); margin-top: 80px;" id="org-header">
+    <div class="container" style="text-align: center;">
+      <span class="hero-badge">橫跨三縣市 • 系統化管理</span>
+      <h1 class="text-gradient" style="font-size: 3rem; margin-top: 1rem;">組織架構與信仰網絡</h1>
+      <p style="color: var(--text-secondary); max-width: 700px; margin: 1.5rem auto 0; font-size: 1.1rem;">
+        透過獨特的「角頭制度」與社團法人化架構，將分散於臺中、彰化、南投的信眾緊密整合，展現傳統社會高度系統化的動員效率。
+      </p>
+    </div>
+  </header>
+
+  <!-- 法律地位與基本資料 -->
+  <section class="section-padding container" id="legal-status-section">
+    <div class="org-meta-grid">
+      <div class="glass-card" id="legal-card-info">
+        <h3 class="text-gradient" style="font-size: 1.3rem; margin-bottom: 1rem;">社團法人登記身分</h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
+          於內政部正式登記為<strong>「社團法人台灣南瑤宮老二媽會」</strong>，屬於傳統民間信仰中的「神明會」。透過現代法人制度與理監事決策機制，使百年信仰管理更具合法性與透明度。
+        </p>
+      </div>
+      <div class="glass-card" id="legal-card-origin">
+        <h3 class="text-gradient" style="font-size: 1.3rem; margin-bottom: 1rem;">跨越階級的創始背景</h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
+          相傳最早於清代道光年間，由臺中樹仔腳林家的某位秀才發起籌組。他成功號召地方佃農一同參與，將秀才的社會號召力與佃農的人力資源相結合，建立了具有跨階層向心力的宗教共同體。
+        </p>
+      </div>
+      <div class="glass-card" id="legal-card-opt">
+        <h3 class="text-gradient" style="font-size: 1.3rem; margin-bottom: 1rem;">效率追求：12角至10角</h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
+          過去曾有「十二大角」，後因近代部分區域會員數減少，面臨管理瓶頸。經理監事開會決議並請示「老二媽」神諭後，精簡整合為「十大角」。這與現代零售優化實體分店營運效率、集中優勢資源的邏輯高度一致。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 十大角頭互動櫥窗 (Jiaotou Section) -->
+  <section class="section-padding container" style="background: rgba(255, 255, 255, 0.01); border-radius: 20px; padding: 4rem 2rem;" id="jiaotou-showcase">
+    <div class="section-header">
+      <h2 class="text-gradient">核心信仰版圖：現行十大角頭</h2>
+      <p>老二媽會的服務範圍橫跨臺中市、南投縣、彰化縣，透過「角頭」作為基本活動與會員聯繫的服務據點。</p>
+    </div>
+
+    <!-- 縣市篩選列 -->
+    <div class="filter-bar" id="filter-bar">
+      <button class="filter-btn active" data-filter="all" id="filter-all">顯示全部</button>
+      <button class="filter-btn" data-filter="taichung" id="filter-taichung">臺中市角頭</button>
+      <button class="filter-btn" data-filter="changhua" id="filter-changhua">彰化縣角頭</button>
+      <button class="filter-btn" data-filter="nantou" id="filter-nantou">南投縣角頭</button>
+    </div>
+
+    <!-- 角頭網格 -->
+    <div class="jiaotou-grid" id="jiaotou-grid">
+      <!-- 臺中 -->
+      <div class="glass-card jiaotou-card" data-county="taichung" id="card-taichung">
+        <span class="county-badge county-taichung">臺中市</span>
+        <h3>臺中角</h3>
+        <p>涵蓋南區、西區、北屯區、太平區等樹仔腳林家核心信仰圈</p>
+      </div>
+      <!-- 彰化 -->
+      <div class="glass-card jiaotou-card" data-county="changhua" id="card-ch-east">
+        <span class="county-badge county-changhua">彰化縣</span>
+        <h3>彰化東角</h3>
+        <p>以彰化市東區及芬園地區為主，鄰近南瑤宮本宮</p>
+      </div>
+      <div class="glass-card jiaotou-card" data-county="changhua" id="card-ch-south">
+        <span class="county-badge county-changhua">彰化縣</span>
+        <h3>彰化南角</h3>
+        <p>覆蓋彰化南區信眾，歷史悠久，會員動員力強</p>
+      </div>
+      <div class="glass-card jiaotou-card" data-county="changhua" id="card-yl-north">
+        <span class="county-badge county-changhua">彰化縣</span>
+        <h3>員林北角</h3>
+        <p>員林市北部及周邊鄉鎮信仰核心，信徒分布密集</p>
+      </div>
+      <div class="glass-card jiaotou-card" data-county="changhua" id="card-yl-south">
+        <span class="county-badge county-changhua">彰化縣</span>
+        <h3>員林南角</h3>
+        <p>員林市南部信仰網絡，定期舉辦角頭會香慶典</p>
+      </div>
+      <!-- 南投 -->
+      <div class="glass-card jiaotou-card" data-county="nantou" id="card-nt-1">
+        <span class="county-badge county-nantou">南投縣</span>
+        <h3>南投第一區角</h3>
+        <p>涵蓋南投市區與名間鄉部分村落，組織結構嚴密</p>
+      </div>
+      <div class="glass-card jiaotou-card" data-county="nantou" id="card-nt-3">
+        <span class="county-badge county-nantou">南投縣</span>
+        <h3>南投第三區角</h3>
+        <p>覆蓋南投市郊與中寮鄉部分地區，信徒向心力強</p>
+      </div>
+      <div class="glass-card jiaotou-card" data-county="nantou" id="card-nt-ly">
+        <span class="county-badge county-nantou">南投縣</span>
+        <h3>龍眼林角</h3>
+        <p>深處中寮山區的傳統聚落，保留許多珍貴的隨香古禮</p>
+      </div>
+      <div class="glass-card jiaotou-card" data-county="nantou" id="card-nt-ct">
+        <span class="county-badge county-nantou">南投縣</span>
+        <h3>草屯角</h3>
+        <p>草屯鎮核心信仰區域，每逢進香期均湧現大量隨香隊伍</p>
+      </div>
+      <div class="glass-card jiaotou-card" data-county="nantou" id="card-nt-ct-east">
+        <span class="county-badge county-nantou">南投縣</span>
+        <h3>草屯東角</h3>
+        <p>草屯東部山腳聚落信仰圈，極具地方宗族特色</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 輪辦機制與專案整合 (Rotation Section) -->
+  <section class="section-padding container" id="rotation-section">
+    <div class="rotation-grid">
+      <div class="rotation-text">
+        <h2 class="text-gradient" style="font-size: 2.2rem; margin-bottom: 1.5rem;">三年一輪：「二媽年」進香輪辦機制</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 1.2rem; text-align: justify; font-size: 1.05rem;">
+          南瑤宮共擁有十個媽祖會，為確保這場涉及中彰投數十萬信徒的大型進香活動能夠穩定運轉，十個媽祖會被分為三組輪流主辦。
+        </p>
+        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; text-align: justify; font-size: 1.05rem;">
+          老二媽會與<strong>「興二媽會」</strong>、<strong>「老伍媽會」</strong>被編入第二組，俗稱<strong>「二媽年」</strong>或<strong>「二媽伍」</strong>。老二媽會每三年會輪值主辦一次進香事宜。
+        </p>
+        <div class="glass-card" style="border-left: 4px solid var(--secondary-color); padding: 1.5rem; background: rgba(223, 172, 68, 0.02);">
+          <strong style="color: var(--text-primary); display: block; margin-bottom: 0.5rem; font-size: 1.1rem;">傳統的「專案整合管理」</strong>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+            此輪辦機制將複雜的跨縣市、跨年度資源調度與人手安排進行了「標準化」與「模組化」。各組織間權責明確，即使是數萬人規模的跨縣市活動，也能以極低的管理混亂度延續百年。
+          </p>
+        </div>
+      </div>
+
+      <!-- 右側輪辦圓盤視覺 -->
+      <div class="rotation-visual" id="rotation-visual-container">
+        <div class="circle-container">
+          <div class="circle-node node-1" id="node-group-1">
+            <span>第一組</span>
+            <strong>大媽年</strong>
+          </div>
+          <div class="circle-node node-2 active" id="node-group-2">
+            <span>第二組</span>
+            <strong>二媽年</strong>
+          </div>
+          <div class="circle-node node-3" id="node-group-3">
+            <span>第三組</span>
+            <strong>三媽年</strong>
+          </div>
+        </div>
+        <div class="circle-center">
+          <span>三年<br>一輪</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁尾 (Footer) -->
+  <footer class="footer" id="footer">
+    <div class="container footer-grid">
+      <div class="footer-info">
+        <div class="brand"><span>南瑤宮</span>老二媽會</div>
+        <p style="text-align: justify;">社團法人台灣南瑤宮老二媽會成立於清代道光年間，承載數百年笨港進香信仰文化，致力於透過組織整合與數據賦能推動傳統信仰的永續保存與智慧轉型。</p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+          <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+          <a href="#" class="social-icon" aria-label="Youtube">YT</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>核心導覽</h4>
+        <ul>
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="history.html">歷史傳承</a></li>
+          <li><a href="organization.html">組織與角頭</a></li>
+          <li><a href="culture.html">文化與俗諺</a></li>
+          <li><a href="digital.html">智慧轉型</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>三大信仰圈</h4>
+        <ul>
+          <li><a href="#">臺中市信仰角頭</a></li>
+          <li><a href="#">彰化縣信仰角頭</a></li>
+          <li><a href="#">南投縣信仰角頭</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>聯絡資訊</h4>
+        <ul style="color: var(--text-secondary);">
+          <li>地址: 彰化市南瑤里南瑤路43號</li>
+          <li>電話: (04) 722-2893</li>
+          <li>登記: 社團法人台灣南瑤宮老二媽會</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 社團法人台灣南瑤宮老二媽會. 版權所有. 傳統文化傳承與智慧零售轉型專案團隊維護。</p>
+      <p>技術對應: OMO 跨通路零售與數據整合解決方案</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
